@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<manifest identifier="CDC_HP" version="1.0"
+	xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+	xmlns:imsmd = "http://www.imsglobal.org/xsd/imsmd_v1p2" 
+	xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+						http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+						http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+
+<metadata>
+   <schema>ADL SCORM</schema>
+   <schemaversion>1.2</schemaversion>
+   <imsmd:lom> 
+      <imsmd:general> 
+         <imsmd:title> 
+            <imsmd:langstring lang = "en_US">Introduction to Policy Analysis</imsmd:langstring> 
+         </imsmd:title> 
+         <imsmd:description> 
+            <imsmd:langstring Lang = "en_US">
+               In this course, you will be learning about the CDC Policy Analysis.
+            </imsmd:langstring> 
+          </imsmd:description> 
+          <imsmd:keywords> 
+            <imsmd:langstring Lang = "en_US">CDC</imsmd:langstring>
+            <imsmd:langstring Lang = "en_US">Health Policy</imsmd:langstring>
+            <imsmd:langstring Lang = "en_US">Policy Analysis</imsmd:langstring>
+          </imsmd:keywords> 
+      </imsmd:general> 
+   </imsmd:lom> 
+</metadata>
+
+<organizations default = "CDC_PA">
+  <organization identifier = "CDC_PA">
+	 <title><![CDATA[Introduction to Policy Analysis]]></title>
+	 <item identifier ="PA" identifierref ="PA_ref" isvisible = "true">
+		  <title><![CDATA[Introduction to Policy Analysis]]></title>
+	 </item>
+  </organization>
+</organizations>
+
+<resources>
+  <resource identifier ="PA_ref" type = "webcontent" adlcp:scormtype ="sco" href="hp_index.html">
+	<file href = "hp_index.html"/>
+	<file href = "cdc_menu.html"/>
+	<file href = "lesson1/01_01_001.html"/>
+	<file href = "lesson2/01_02_001.html"/>
+	<file href = "lesson3/01_03_001.html"/>
+	<file href = "lesson4/01_04_001.html"/>
+	<file href = "lesson5/01_05_001.html"/>
+	<file href = "lesson6/01_06_001.html"/>
+	<file href = "lesson7/01_07_001.html"/>
+	<file href = "lesson8/01_08_001.html"/>
+	<file href = "scripts/APIWrapper.js"/>
+	<file href = "scripts/SCOFunctions.js"/>
+	<file href = "scripts/cdc_hp_scorm.js"/>
+	<file href = "scripts/cdc_hp_content.js"/>
+  </resource>
+</resources>
+
+</manifest>
+

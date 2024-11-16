@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import url('web_fonts.css');
+/* CSS Document for medium size popup window */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	min-width:543px;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+	font-family: "PT Sans", sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color: #464646;
+}
+
+#popWrapper { 
+  position:relative;
+  width:543px;
+  height:321px;
+  background:#000 url(../sysimages/popup_small.png) top left no-repeat;
+}
+
+#popContent {
+	position: absolute;
+	left: 38px;
+	top: 40px;
+	width: 470px;
+	height: 250px;
+	padding-right:5px;
+	overflow: auto;
+}
+
+#close {
+	position: absolute;
+	left: 455px;
+	top: 19px;
+	width: 68px;
+	height: 16px;
+}
+
+h1.popTitle {
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #cecaa9;
+	width: 100%;
+}
+
+p {
+	font-family: "PT Sans", sans-serif;
+	font-size:14px;
+	padding: 5px 0;
+	color: #464646;
+}
+
+li {
+	font-family: "PT Sans", sans-serif;
+	font-size:14px;
+	margin-left:30px;
+}

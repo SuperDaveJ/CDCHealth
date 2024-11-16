@@ -1,0 +1,664 @@
+@charset "utf-8";
+/*@import url('web_fonts.css');*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	min-width:960px;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	font-size:13px;
+	font-weight:normal;
+	color: #464646;
+}
+
+.wf-loading #contentHolder {
+	font-family: sans-serif;
+}
+.wf-inactive #contentHolder {
+	font-family: sans-serif;
+}
+.wf-active #contentHolder {
+	font-family: "PT Sans", sans-serif;
+}
+
+#contentHolder.content {
+	background:#fff url(../sysimages/background_GUI_Content.jpg) no-repeat top left;
+	position:relative;
+	width: 960px;
+	height: 580px;
+	margin:15px auto;
+}
+#contentHolder.overview {
+	background:#fff url(../sysimages/background_lesson_overview.jpg) no-repeat top left;
+	position:relative;
+	width: 960px;
+	height: 580px;
+	margin:15px auto;
+}
+#contentHolder.knowledge {
+	background:#fff url(../sysimages/background_knowledge_review.jpg) no-repeat top left;
+	position:relative;
+	width: 960px;
+	height: 580px;
+	margin:15px auto;
+}
+
+.wf-loading p, .wf-loading #fdbkTxt {
+	font-family: sans-serif;
+	font-size:13px;
+	padding: 5px 0;
+	color: #464646;
+}
+.wf-inactive p, .wf-inactive #fdbkTxt {
+	font-family: sans-serif;
+	font-size:13px;
+	padding: 5px 0;
+	color: #464646;
+}
+.wf-active p, .wf-active #fdbkTxt {
+	font-family: "PT Sans", sans-serif;
+	font-size:13px;
+	padding: 5px 0;
+	color: #464646;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl {
+	margin-left: 25px;
+	padding: 5px 0;
+}
+li { padding-bottom: 2px; }
+td ol { margin-top: -2px; } /* for questions */
+
+a img {
+	border: none;
+}
+/* Styling for links must remain in this order - including the group of selectors that create the hover effect. */
+.wf-loading a:link {
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #2b4b76;
+	text-decoration: none;
+}
+.wf-inactive a:link {
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #2b4b76;
+	text-decoration: none;
+}
+.wf-active a:link {
+	font-family: "PT Sans", sans-serif;
+	font-weight: bold;
+	color: #2b4b76;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #662d91;
+	text-decoration: none;
+}
+/* shadowbox visited state */
+.wf-loading a.sb_visited {
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #662d91;
+	text-decoration: none;
+}
+.wf-inactive a.sb_visited {
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #662d91;
+	text-decoration: none;
+}
+.wf-active a.sb_visited {
+	font-family: "PT Sans", sans-serif;
+	font-weight: bold;
+	color: #662d91;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	color: #688cbb;
+	text-decoration: underline;
+}
+
+#dlink {
+	position:absolute;
+	left:0px;
+	top:370px;
+	width:20px;
+	height:15px;
+}
+
+#text_left {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 400px;
+	height: 335px;
+}
+
+#img_right {
+	position: absolute;
+	left: 415px;
+	top: 0px;
+	width: 360px;
+	height: 335px;
+}
+
+hr {
+	color: #c0c1a2;
+	background-color: #c0c1a2;
+	height: 1px;
+	width: 575px;
+	border: none;
+	margin: 0px 10px 0 20px;
+	text-align:left;
+}
+
+/***************** Exit button *********************/
+#exit {
+	position: absolute;
+	left: 855px;
+	top: 14px;
+	width: 52px;
+	height: 16px;
+	background: url("../sysimages/exit_0.png");
+}
+#exit:hover { background:url("../sysimages/exit_2.png"); }
+#exit span { display: none; }
+
+
+/***************** Heading (titles) ****************/
+#heading1 {
+	position:absolute;
+	left: 60px;
+	top: 46px;
+	width: 870px;
+	height: 30px;
+}
+#audio_icon {
+	position: absolute;
+	left: 770px;
+	top: 16px;
+	width: 71px;
+	height: 16px;
+}
+#audio_icon1 {
+	position: absolute;
+	left: 770px;
+	top: 24px;
+	width: 71px;
+	height: 16px;
+}
+
+.wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading span.intro, .wf-loading #audioAndPgNum, .wf-loading #aTxt, .wf-loading #cTxt, .wf-loading .fdbkTitle {
+	font-family: sans-serif;
+}
+.wf-inactive h1, .wf-inactive h2, .wf-inactive h3, .wf-inactive span.intro, .wf-inactive #audioAndPgNum, .wf-inactive #aTxt, .wf-inactive #cTxt, .wf-inactive .fdbkTitle {
+	font-family: sans-serif;
+}
+.wf-active h1, .wf-active h2, .wf-active h3, .wf-active span.intro, .wf-active #audioAndPgNum, .wf-active #aTxt, .wf-active #cTxt, .wf-active .fdbkTitle {
+	font-family: Oswald, sans-serif;
+}
+
+/********** for page 1 ************/
+h1.lesNumber1 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 46px;
+	color: #cecaa9;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 240px;
+	height: 35px;
+}
+h2.lesTitle1 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #655541;
+	position: absolute;
+	left: 255px;
+	top: 24px;
+	width: 640px;
+	height: 20px;
+}
+span.intro {
+	font-weight: bold;
+	font-size: 16px;
+	color: #982335;
+}
+
+/********** for all other pages ************/
+#heading {
+	position:absolute;
+	left: 60px;
+	top: 48px;
+	width: 870px;
+	height: 30px;
+}
+h1.lesNumber {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #cecaa9;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 180px;
+	height: 35px;
+}
+h2.lesTitle {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 19px;
+	color: #655541;
+	position: absolute;
+	left: 200px;
+	top: 13px;
+	width: 660px;
+	height: 20px;
+}
+
+/****************** Content Area ********************/
+#content_overview {
+	position:absolute;
+	left:60px;
+	top:118px;
+	width:870px;
+	height:350px;
+}
+
+#content {
+	position:absolute;
+	left:60px;
+	top:105px;
+	width:870px;
+	height:350px;
+}
+#content_508 {
+	position: absolute;
+	left: 0px;
+	top: 45px;
+	width: 845px;
+	height: 300px;
+	overflow-y: auto;
+}
+
+h3.pgTitle {
+	font-weight: bold;
+	font-size: 18px;
+	color: #982335;
+	margin-bottom: 5px;
+}
+
+/************* Prompts ********************/
+#prompt1 {
+	position: absolute;
+	top: 472px;
+	left: 60px;
+	width: 400px;
+	height: 14px;
+	font-weight: bold;
+	font-size: 13px;
+	color: #821c27;
+	text-align: left;
+}
+#prompt2 {
+	position: absolute;
+	top: 462px;
+	left: 60px;
+	width: 360px;
+	height: 30px;
+	font-weight: bold;
+	font-size: 13px;
+	color: #821c27;
+	text-align: left;
+	line-height: 14px;
+}
+
+
+/************ navBar ******************/
+#navBar {
+	position: absolute;
+	top: 492px;
+	left: 0px;
+	width: 960px;
+	height: 55px;
+	font-size:11px;
+	font-weight:normal;
+	color:#252e3a;
+}
+
+#menu, #resources, #glossary, #help, #next, #back, #refresh {
+	position: absolute;
+	top: 0px;
+	height: 55px;
+	display: block;
+}
+
+#menu {
+	left:0px;
+	width:103px; 
+	background:url("../sysimages/menu_0.jpg");
+}
+#menu:hover { background:url("../sysimages/menu_2.jpg"); }
+#menu span { display: none; }
+
+#glossary {
+	left: 103px;
+	width: 81px;
+	background: url("../sysimages/glossary_0.jpg");
+}
+#glossary:hover { background:url("../sysimages/glossary_2.jpg"); }
+#glossary span { display: none; }
+
+#resources {
+	left: 184px;
+	width: 90px;
+	background: url("../sysimages/resources_0.jpg");
+}
+#resources:hover { background:url("../sysimages/resources_2.jpg"); }
+#resources span { display: none; }
+
+#help {
+	left: 274px;
+	width: 49px;
+	background: url("../sysimages/help_0.jpg");
+}
+#help:hover { background:url("../sysimages/help_2.jpg"); }
+#help span { display: none; }
+
+#refresh {
+	left: 323px;
+	width: 96px;
+	background: url("../sysimages/refresh_0.jpg");
+}
+#refresh:hover { background:url("../sysimages/refresh_2.jpg"); }
+#refresh span { display: none; }
+
+#back {
+	left: 566px;
+	width: 77px;
+	background: url("../sysimages/back_0.jpg");
+	display: block;
+}
+#back:hover { background:url("../sysimages/back_2.jpg"); }
+#back.disabled { display: none; }
+#back span { display: none; }
+
+#next {
+	left: 644px;
+	width: 77px;
+	background: url("../sysimages/next_0.jpg");
+	display: block;
+}
+#next:hover { background:url("../sysimages/next_2.jpg"); }
+#next.disabled { display: none; }
+#next span { display: none;}
+/************** End of navBar ********************/
+
+/***************** Audio and Page Number ****************/
+#audioAndPgNum {
+	/* this is located below navBar */
+	position: absolute;
+	top: 555px;
+	left: 0px;
+	width: 960px;
+	height: 20px;
+	font-weight: normal;
+	font-size: 11px;
+	color: #252e3a;
+}
+#audioAndCC {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 250px;
+	height: 16px;
+	visibility: visible;
+}
+#aTxt {
+	position: absolute;
+	left: 60px;
+	top: 0px;
+	width: 30px;
+	height: 10px;
+	font-weight: normal;
+	font-size: 11px;
+	color: #252e3a;
+	text-decoration: none;
+}
+#PnP {
+	position: absolute;
+	left: 90px;
+	top: 3px;
+	width: 15px;
+	height: 10px;
+}
+#rewind {
+	position: absolute;
+	left: 107px;
+	top: 5px;
+	width: 15px;
+	height: 10px;
+}
+
+#cc {
+	position: absolute;
+	left: 150px;
+	top: 3px;
+	width: 15px;
+	height: 10px;
+}
+
+#cTxt {
+	position: absolute;
+	left: 170px;
+	top: 0px;
+	width: 90px;
+	height: 10px;
+	font-weight: normal;
+	font-size: 11px;
+	color: #252e3a;
+	text-decoration: none;
+}
+
+#pgNum {
+	position: absolute;
+	left: 566px;
+	top: 0px;
+	width: 155px;
+	text-align: center;
+}
+/***************** End of Audio and Page Number ****************/
+
+/************ Knowledge Review Items **********************/
+#qHolder {
+	position: absolute;
+	left: 60px;
+	top: 123px;
+	width: 859px;
+	height: 327px;
+	font-weight: normal;
+	font-size: 13px;
+	color: #464646;
+}
+#qH {
+	position:relative;
+	width: 590px;
+}
+#aH {
+	position:relative;
+	width: 590px;
+}
+
+#qV {
+	position: relative;
+	width: 200px;
+	height: 300px;
+	float: left;
+}
+#vBar {
+	position: relative;
+	width: 1px;
+	height: 284px;
+	margin: 30px 10px 0 10px;;
+	float: left;
+}
+#aV {
+	position: relative;
+	width: 380px;
+	height: 300px;
+	float: left;
+}
+img.qImg {
+	margin-right: 15px;
+	float: left;
+}
+p.qStem {
+	float: left;
+}
+table.qDistracters {
+	width: 100%;
+	float: left;
+}
+table.qDistracters td {
+	padding: 5px 0;
+}
+
+#feedback {
+	position: absolute;
+	left: 616px;
+	top: -5px;
+	width: 235px;
+	height: 327px;
+	clear: both;
+	display: none;
+}
+
+.wf-loading .fdbkTitle {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	color: #7d8748;
+	text-transform: uppercase;
+}
+.wf-inactive .fdbkTitle {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	color: #7d8748;
+	text-transform: uppercase;
+}
+.wf-active .fdbkTitle {
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	color: #7d8748;
+	text-transform: uppercase;
+}
+
+#fdbkTxt p {
+	font-weight: normal;
+	line-height: 16px;
+	font-style: normal;
+	font-size: 14px;
+	color: #2b4b76;
+}
+.fdbkText {
+	font-weight: normal;
+	line-height: 16px;
+	font-style: normal;
+	font-size: 14px;
+	color: #2b4b76;
+}
+#submit {
+	position: absolute;
+	left: 513px;
+	top: 301px;
+	width: 78px;
+	height: 28px;
+	clear: both;
+}
+
+
+/****************** Questions ****************************/
+.button {
+	border:none;
+	outline:none;
+}
+
+td.rdck { width:50px; text-align:right; height:20px; vertical-align:top; }
+td.letter { width:30px; text-align:center; vertical-align:top; padding-top:2px; }
+td.disTxt { text-align:left; vertical-align:top; }
+input.tf { margin: 3px 5px 3px 40px; }
+
+/****************** Grid Table ***************************/
+.gridStyle {
+	border-style:solid; 
+	border-color:#999; 
+	border-collapse:collapse;
+	border-width:0 1px 1px 0; 
+}
+td.gridTop {
+	border-style:solid; 
+	border-color:#999; 
+	border-collapse:collapse;
+	border-width:1px 1px 1px 0; 
+	font-weight:bold;
+	padding: 3px 0;
+}
+td.gridLeft {
+	border-style:solid; 
+	border-color:#999; 
+	border-collapse:collapse;
+	border-width:0 1px 1px 1px; 
+	padding:4px 5px 4px 2px;
+}
+td.gridFirstCell {
+	border-style:solid; 
+	border-color:#999; 
+	border-collapse:collapse;
+	border-width:1px; 
+	font-weight:bold;
+}
+/****************** End of Grid Table ***************************/
+
+/******************** 508 table *********************************/
+table.c508 {
+	border-collapse:collapse;
+	border: 1px solid #999;
+}
+	
+th.c508 {
+	font-weight:bold;
+	padding:5px;
+	border: 1px solid #999;
+}
+td.c508 {
+	padding:4px;
+	vertical-align:top;
+	border: 1px solid #999;
+}
+td.graf {
+	vertical-align:top;
+	border: 1px solid #999;
+}
+/******************** End of 508 table *********************************/
+
+#flashAudio {
+	/* Off Screen */
+	position:absolute;
+	left:-3000px;
+	top:200px;
+	width:1px;
+	height:1px;
+}

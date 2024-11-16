@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/popupPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Popup Information</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="../styles/cdc_hp_popup.css" />
+<!-- InstanceBeginEditable name="head" -->
+<script src="../scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+function openWinCentered(myUrl, myTitle, myWidth, myHeight, scrollbar, resize ) {
+	// open the window
+	positionTop = (screen.height - myHeight)/2 - 25;
+	positionLeft = (screen.width - myWidth)/2 - 5;
+	newWin = window.open (myUrl,myTitle,"toolbar=no,location=no,width="+myWidth+",height="+myHeight+",menubar=no,resizable="+resize+",status=no,scrollbars="+scrollbar+",top="+positionTop+",left="+positionLeft+"");
+	if (window.focus) newWin.focus();
+	return newWin;
+}
+
+function show_cc() {
+	openWinCentered( "01_03_005_cc.html", "AudioTranscript", 543, 321, "no", "yes" );
+}
+
+</script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="popWrapper">
+  <div id="popContent">
+<!-- InstanceBeginEditable name="MainContent" -->
+<h1 class="popTitle">Defining and Scoping the Problem</h1>
+
+<div style="margin-top:20px; text-align:center;">
+  <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="800" height="283">
+    <param name="movie" value="assets/01_03_005.swf" />
+    <param name="quality" value="high" />
+    <param name="play" value="true" />
+    <param name="allowScriptAccess" value="always" />
+    <param name="swfversion" value="9.0.45.0" />
+    <param name="expressinstall" value="scripts/expressInstall.swf" />
+    <embed name="FlashID" 
+    	src="assets/01_03_005.swf" 
+    	swliveconnect="true" 
+		play="true" 
+        quality="high"
+        allowScriptAccess="always"
+		width="800" height="283" 
+        type="application/x-shockwave-flash" >
+      </embed >
+    </object>
+    
+    <p>&nbsp;</p>
+    <p>Select the arrows to navigate through the slideshow.</p>
+    <p><a href="javascript:show_cc()">Audio Transcript</a></p>
+</div>
+
+<script type="text/javascript">
+//swfobject.registerObject("FlashID2");
+</script>
+<!-- InstanceEndEditable -->
+  </div> <!-- End of popContent -->
+  
+  <div id="close">
+	<a href="javascript:parent.Shadowbox.close()">
+	<img src="../shadowbox/close_0.png" onmouseover="this.src='../shadowbox/close_2.png'" onmouseout="this.src='../shadowbox/close_0.png'" width="68" height="16" border="0" alt="close" />
+    </a>
+  </div>
+</div><!-- End of popWrapper -->
+</body>
+<!-- InstanceEnd --></html>

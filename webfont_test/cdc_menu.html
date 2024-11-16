@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="styles/web_fonts.css" />
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<script type="text/JavaScript" src="scripts/APIWrapper.js"></script>
+<script type="text/JavaScript" src="scripts/SCOFunctions.js"></script>
+<script type="text/javascript" src="scripts/cdc_hp_scorm.js"></script>
+<title>Introduction to Policy Analysis</title>
+<style type="text/css">
+body {
+	min-width:960px;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+	font-family: "PT Sans", sans-serif;
+	font-size:13px;
+	font-weight:normal;
+	color: #464646;
+}
+
+#contentHolder {
+	background:#fff url(sysimages/background_main_menu.jpg) no-repeat top left;
+	position:relative;
+	width: 960px;
+	height: 580px;
+	margin:15px auto;
+}
+
+#itemContainer {
+	position: absolute;
+	left: 69px;
+	top: 133px;
+	width: 440px;
+	height: 340px;
+}
+
+#itemContainer a {
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: #655541;
+	text-transform: uppercase;
+	text-decoration: none;
+	position: absolute;
+	top: 4px;
+	left: 80px;
+	line-height: 18px;
+}
+#itemContainer a.completed {
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: #cecaa9;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+#itemContainer .lesNum {
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	color: #cecaa9;
+	line-height: 24px;
+}
+#itemContainer lesTitle {
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: #655541;
+}
+
+#exit {
+	position: absolute;
+	left: 855px;
+	top: 14px;
+	width: 52px;
+	height: 16px;
+	background: url("sysimages/exit_0.png");
+}
+#exit:hover { background:url("sysimages/exit_2.png"); }
+#exit span { display: none; }
+
+</style>
+
+<script language="javascript" type="text/javascript">
+
+if ( inLMS == true ) {
+	var blnLastPage = false;
+	getSuspendData();
+  	closing = true;
+	window.onunload = callExitCourse;
+}
+
+function exitConfirm(){
+	if (confirm("Do you wish to exit the course?")==true) {
+		exitCourse(true);
+	}
+}
+
+function launchLesson(pgURL) {
+	closing = false;
+	window.location.href = pgURL;
+}
+
+$(document).ready(function() {
+  $("#exit").on("click", exitConfirm);
+  if (inLMS == true) {
+	for (var i=1; i<=nLessons; ++i) {
+		if (getLessonStatus(i) == 2) {
+			eval("document.getElementById('chk" + i + "').style.visibility = 'visible'");
+		} else {
+			eval("document.getElementById('chk" + i + "').style.visibility = 'hidden'");
+		}
+	}
+  }
+});
+</script>
+
+</head>
+
+<body>
+<div id="contentHolder">
+
+<div id="itemContainer">
+	<div id="item1" style="position:absolute; left:0px; top:0px; width:360px;">
+	<span class="lesNum">Lesson 01</span> <a id="les1" href="javascript:launchLesson('lesson1/01_01_001.html');">Getting Around The Course</a>
+    </div>
+	<div id="chk1" style="position:absolute; left:380px; top:-5px; width:24px; height:25px; visibility:hidden;">
+    <img src="sysimages/checkmark.png" width="24" height="25" alt="lesson 1 completed." /> </div>
+    
+	<div id="item2" style="position: absolute; left: 0px; top: 40px; width: 360px;">
+	<span class="lesNum">Lesson 02</span> <a id="les2" href="javascript:launchLesson('lesson2/01_02_001.html');">Overview of Health Policy</a>
+    </div>
+	<div id="chk2" style="position:absolute; left:380px; top:35px; width:24px; height:25px; visibility:hidden;">
+    <img src="sysimages/checkmark.png" width="24" height="25" alt="lesson 2 completed." /> </div>
+
+	<div id="item3" style="position: absolute; left: 0px; top: 80px; width: 360px; height: 35px;">
+	<span class="lesNum">Lesson 03</span> <a id="les3" href="javascript:launchLesson('lesson3/01_03_001.html');">Define the Problem Which Impacts Public Health</a>
+    </div>
+	<div id="chk3" style="position:absolute; left:380px; top:85px; width:24px; height:25px; visibility:hidden;">
+    <img src="sysimages/checkmark.png" width="24" height="25" alt="lesson 3 completed." /> </div>
+
+	<div id="item4" style="position: absolute; left: 0px; top: 135px; width: 360px; height: 20px;">
+	<span class="lesNum">Lesson 04</span> <a id="les4" href="javascript:launchLesson('lesson4/01_04_001.html');">Identifying Policy Options</a>
+    </div>
+	<div id="chk4" style="position:absolute; left:380px; top:130px; width:24px; height:25px; visibility:hidden;">
+    <img src="sysimages/checkmark.png" width="24" height="25" alt="lesson 4 completed." /> </div>
+
+	<div id="item5" style="position: absolute; left: 0px; top: 173px; width: 360px; height: 20px;">
+	<span class="lesNum">Lesson 05</span> <a id="les5" href="javascript:launchLesson('lesson5/01_05_001.html');">Assessing Policy Options</a>
+    </div>
+	<div id="chk5" style="position:absolute; left:380px; top:168px; width:24px; height:25px; visibility:hidden;">
+    <img src="sysimages/checkmark.png" width="24" height="25" alt="lesson 5 completed." /> </div>
+
+	<div id="item6" style="position: absolute; left: 0px; top: 212px; width: 360px; height: 20px;">
+	<span class="lesNum">Lesson 06</span> <a id="les6" href="javascript:launchLesson('lesson6/01_06_001.html');">Selecting Policy Options</a>
+    </div>
+	<div id="chk6" style="position:absolute; left:380px; top:205px; width:24px; height:25px; visibility:hidden;">
+    <img src="sysimages/checkmark.png" width="24" height="25" alt="lesson 6 completed." /> </div>
+
+	<div id="item7" style="position: absolute; left: 0px; top: 250px; width: 360px; height: 35px;">
+	<span class="lesNum">Lesson 07</span> <a id="les7" href="javascript:launchLesson('lesson7/01_07_001.html');">Effective Communication of Selected Policy Options</a>
+    </div>
+	<div id="chk7" style="position:absolute; left:380px; top:240px; width:24px; height:25px; visibility:hidden;">
+    <img src="sysimages/checkmark.png" width="24" height="25" alt="lesson 7 completed." /> </div>
+
+	<div id="item8" style="position: absolute; left: 0px; top: 310px; width: 360px; height: 20px;">
+	<span class="lesNum">Lesson 08</span> <a id="les8" href="javascript:launchLesson('lesson8/01_08_001.html');">Course Summary</a>
+    </div>
+	<div id="chk8" style="position:absolute; left:380px; top:303px; width:24px; height:25px; visibility:hidden;">
+    <img src="sysimages/checkmark.png" width="24" height="25" alt="lesson 8 completed." /> </div>
+
+</div>
+
+<a id="exit" href="#" title="Exit"><span>Exit</span></a>
+
+</div>
+</body>
+</html>

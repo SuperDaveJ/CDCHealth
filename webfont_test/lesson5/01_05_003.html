@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/cdc_hp_knowledge.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Introduction to Policy analysis</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="../styles/cdc_hp.css" />
+<script type="text/javascript" src="../scripts/jquery-1.7.1.min.js"></script>
+<script type="text/JavaScript" src="../scripts/APIWrapper.js"></script>
+<script type="text/JavaScript" src="../scripts/SCOFunctions.js"></script>
+<script type="text/javascript" src="../scripts/cdc_hp_scorm.js"></script>
+<script type="text/javascript" src="../scripts/cdc_hp_content.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<script type="text/javascript">
+    nextURL = "01_05_004.html";
+    backURL = "01_05_0025.html";
+	if ( !isPageViewed(getPage()) ) {
+		enableNext = false;
+	}
+	
+var nRows, nCols
+nRows = 3;	//does not include the first row which is for column title
+nCols = 3;	//does not include the first column which is for text
+widthTable = 590;	//table width
+widthCol0 = 380;	//first column (text) width. All other columns will be evenly divided.
+var ansCorrect = "132";		//correct collunm number (0 based) for row 1, 2, etc.
+ 
+arrColWidth = new Array(nCols);
+for (var j=0; j<nCols; j++) {
+	arrColWidth[j] = Math.round((widthTable - widthCol0)/nCols) + "px";
+}
+
+//Specify row and column titles here.  You need to add or remove titles accordingly.
+arrColTitle = new Array(nCols+1);
+arrRowTitle = new Array(nRows+1);
+arrColTitle[0] = "Finding";
+arrColTitle[1] = "Health Impact";
+arrColTitle[2] = "Feasibility";
+arrColTitle[3] = "Fiscal and Economic Impact";
+ 
+arrRowTitle[1] = "In 2008, more than 650,000 young people ages 10-24 were treated in emergency departments for injuries sustained from violence.";
+arrRowTitle[2] = "Using data from 9,852 men (average BMI: 28) and 13,837 women (average BMI: 27) ages 20 to 64, among whom 28 percent were obese, researchers found annual medical spending for an obese person was $3,271 compared with $512 for a non-obese person.";
+arrRowTitle[3] = "Scientific polling found that residents of Lowell opposed a state tax on soda of one penny per ounce by a 35 point margin, but opposition dropped to a margin of one point when respondents were told the money would go towards health care.";
+ 
+var fdbkWrong1 = "<p>Incorrect.  One or more of your answers is incorrect.</p> <p>Please try again.</p>"
+
+var fdbkWrong2 = "<p>Incorrect.  The correct answers are now displayed.</p> <p>Refer to page 2 of this lesson for more information.</p> <p>Select the Next Arrow to continue.</p>";
+
+var fdbkCorrect = "<p>Correct!  Select the Next Arrow to continue.</p>" 
+
+</script>
+<script type="text/javascript" src="../scripts/grid_jQuery.js"></script>
+
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="contentHolder" class="knowledge">
+<div id="qHolder">
+<!-- InstanceBeginEditable name="QuestionArea" -->
+<!-- Horizantal Section 
+<div id="qH"><img src="../sysimages/Knowledge_Review_Q.png" width="50" height="95" alt="Question" /></div>
+
+<hr />
+
+<div id="aH"><img src="../sysimages/Knowledge_Review_A.png" width="52" height="83" alt="Distracters" /></div>
+-->
+
+<div id="qGrid" style="width: 600px;">
+
+<p>Match each research finding to the applicable criterion by selecting an appropriate cell in the table below.</p>
+
+  <form id="qForm">
+  </form>
+</div>
+
+<div id="submit" style="top:330px;"><a href='javascript:judgeInteraction()' title='submit'><img id="done" src="../sysimages/submit_0.jpg" onmouseover="this.src='../sysimages/submit_2.jpg'" onmouseout="this.src='../sysimages/submit_0.jpg'" width="78" height="28" alt="Submit" /></a></div>
+
+<div id="feedback"><p class="fdbkTitle">Feedback</p>
+<div id="fdbkTxt">&nbsp;</div>
+</div>
+
+<!-- InstanceEndEditable -->
+</div><!-- End of qHolder -->
+
+<!-- InstanceBeginEditable name="PromtAndOthers" -->
+<div id="audioAndPgNum">
+	<div id="pgNum">Page 4 of 9</div>
+</div>
+
+<div id="prompt1">Correctly match the items. Then select SUBMIT.</div>
+<!-- InstanceEndEditable -->
+
+
+<div id="navBar">
+  	<a href="#" id="next" title="Next"><span>Next</span></a>
+  	<a href="#" id="back" title="Back"><span>Back</span></a>
+  	<a href="#" id="refresh" name="refresh" title="Refresh"><span>Refresh</span></a>
+    <a href="#" id="help" name="help" title="Help"><span>Help</span></a>
+    <a href="#" id="resources" name="resources" title="Resources"><span>Resources</span></a>
+    <a href="#" id="glossary" name="glossary" title="Glossary"><span>Glossary</span></a>
+    <a href="#" id="menu" name="menu" title="Menu"><span>Menu</span></a>
+</div><!-- End of navBar -->
+
+<a id="exit" href="#" title="Exit"><span>Exit</span></a>
+
+</div><!-- End of contentHolder -->
+
+<!-- InstanceBeginEditable name="BottomCodeArea" -->
+
+<!-- InstanceEndEditable -->
+
+
+</body>
+<!-- InstanceEnd --></html>

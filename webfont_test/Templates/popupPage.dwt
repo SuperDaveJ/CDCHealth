@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Popup Information</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" type="text/css" href="../styles/cdc_hp_popup.css" />
+<!-- TemplateBeginEditable name="head" -->
+
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div id="popWrapper">
+  <div id="popContent">
+<!-- TemplateBeginEditable name="MainContent" -->
+<h1 class="popTitle">Popup Title Here</h1>
+
+<p>Content text here. Content text here. Content text here. Content text here. Content text here. Content text here. Content text here. Content text here. Content text here. Content text here. Content text here. </p>
+
+<p>Content text here. Content text here. Content text here. Content text here. Content text here. Content text here. Content text here. Content text here. Content text here. Content text here. Content text here. </p>
+<!-- TemplateEndEditable -->
+  </div> <!-- End of popContent -->
+  
+  <div id="close">
+	<a href="javascript:parent.Shadowbox.close()">
+	<img src="../shadowbox/close_0.png" onmouseover="this.src='../shadowbox/close_2.png'" onmouseout="this.src='../shadowbox/close_0.png'" width="68" height="16" border="0" alt="close" />
+    </a>
+  </div>
+</div><!-- End of popWrapper -->
+</body>
+</html>

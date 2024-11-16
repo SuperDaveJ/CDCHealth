@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Resources</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" type="text/css" href="../styles/cdc_resources.css" />
+
+<!-- TemplateBeginEditable name="head" -->
+<style type="text/css">
+</style>
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div id="popWrapper">
+<!-- TemplateBeginEditable name="TitleArea" -->
+<h1 class="popTitle">RESOURCES</h1>
+<!-- TemplateEndEditable -->
+
+<div id="popContent">
+<!-- TemplateBeginEditable name="Content" -->
+
+<ol>
+  <li>CDC Recommendations for Improving Health through Transportation Policy - <br /><a href="http://www.cdc.gov/transportation/recommendation.htm" target="_blank">http://www.cdc.gov/transportation/recommendation.htm</a></li>
+   
+  <li>CDC Smoking and Tobacco Use - <br /><a href="" target="_blank">http://www.cdc.gov/tobacco/data_statistics/mmwrs/byyear/2009/mm5819a2/highlights.htm</a></li>
+
+  <li>CDC’s Health Policy Competency - <br />http://intranet.cdc.gov/od/hcrmo/CDCU/competencies/functional/health.shtml</li>
+
+  <li>Ten Great Public Health Achievements — United States, 2001–2010 - <br />http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6019a5.htm?s_cid=mm6019a5_w</li>
+
+  <li>The Guide to Community Preventive Services” - http://www.thecommunityguide.org/index.html</li>
+
+  <li>World Health Organization: Guidance on ethics and equitable access to HIV treatment and care. http://www.who.int/ethics/en/ethics_equity_HIV_e.pdf</li>
+
+  <li>Barnett, D.J., Taylor, H.A., Hodge, Jr, J.G., and  Links, J.M. Resource Allocation on the Frontlines of Public Health Preparedness and Response: Report of a Summit on Legal and Ethical Issues. Public Health Rep. 2009 Mar-Apr; 124(2): 295–303.<br />
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2646457/</li>
+</ol>
+
+<!-- TemplateEndEditable -->
+</div> <!-- End of popContent -->
+  
+  <div id="close">
+	<a href="javascript:self.close()">
+	<img src="../shadowbox/close_0.png" onmouseover="this.src='../shadowbox/close_2.png'" onmouseout="this.src='../shadowbox/close_0.png'" width="68" height="16" border="0" alt="close" />
+    </a>
+  </div>
+</div><!-- End of popWrapper -->
+</body>
+</html>

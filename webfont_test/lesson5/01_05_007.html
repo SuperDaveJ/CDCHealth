@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/cdc_hp_knowledge.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Introduction to Policy analysis</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="../styles/cdc_hp.css" />
+<script type="text/javascript" src="../scripts/jquery-1.7.1.min.js"></script>
+<script type="text/JavaScript" src="../scripts/APIWrapper.js"></script>
+<script type="text/JavaScript" src="../scripts/SCOFunctions.js"></script>
+<script type="text/javascript" src="../scripts/cdc_hp_scorm.js"></script>
+<script type="text/javascript" src="../scripts/cdc_hp_content.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<script type="text/javascript">
+    nextURL = "01_05_008.html";
+    backURL = "01_05_006.html";
+	if ( !isPageViewed(getPage()) ) {
+		enableNext = false;
+	}
+	
+var nRows, nCols
+nRows = 5;	//does not include the first row which is for column title
+nCols = 5;	//does not include the first column which is for text
+widthTable = 590;	//table width
+widthCol0 = 200;	//first column (text) width. All other columns will be evenly divided.
+var ansCorrect = "45321";		//correct collunm number (0 based) for row 1, 2, etc.
+ 
+arrColWidth = new Array(nCols);
+for (var j=0; j<nCols; j++) {
+	arrColWidth[j] = Math.round((widthTable - widthCol0)/nCols) + "px";
+}
+
+//Specify row and column titles here.  You need to add or remove titles accordingly.
+arrColTitle = new Array(nCols+1);
+arrRowTitle = new Array(nRows+1);
+arrColTitle[0] = "Policy Characteristics";
+arrColTitle[1] = "Low Public Health Impact";
+arrColTitle[2] = "Low Feasibility";
+arrColTitle[3] = "High Fiscal and/or Economic Impact";
+arrColTitle[4] = "High Public Health Impact";
+arrColTitle[5] = "High Feasibility"
+ 
+arrRowTitle[1] = "Benefits a large portion of the population";
+arrRowTitle[2] = "Has worked well in key areas and has widespread support";
+arrRowTitle[3] = "Would cost a sizeable amount to enact, implement, and enforce";
+arrRowTitle[4] = "Has more political forces and opponents than supporters";
+arrRowTitle[5] = "Only marginally improves health outcomes for a small slice of the population";
+ 
+var fdbkWrong1 = "<p>Incorrect.  One or more of your answers is incorrect.</p> <p>Please try again.</p>"
+
+var fdbkWrong2 = "<p>Incorrect.  The correct answer is now displayed.</p> <p>Refer to page 7 of this lesson for more information.</p> <p>Select the Next Arrow to continue.</p>";
+
+var fdbkCorrect = "<p>Correct! You have correctly matched each policy characteristic with the criterion it describes.</p> <p>Select the Next Arrow to continue.</p>" 
+
+</script>
+<script type="text/javascript" src="../scripts/grid_jQuery.js"></script>
+
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div id="contentHolder" class="knowledge">
+<div id="qHolder">
+<!-- InstanceBeginEditable name="QuestionArea" -->
+<!-- Horizantal Section 
+<div id="qH"><img src="../sysimages/Knowledge_Review_Q.png" width="50" height="95" alt="Question" /></div>
+
+<hr />
+
+<div id="aH"><img src="../sysimages/Knowledge_Review_A.png" width="52" height="83" alt="Distracters" /></div>
+-->
+
+<div id="qGrid" style="width: 590px;">
+
+<p>Match each policy characteristic with the criterion it best describes by selecting an appropriate cell in the table below. </p>
+
+  <form id="qForm">
+  </form>
+</div>
+
+<div id="submit" style="top:335px;"><a href='javascript:judgeInteraction()' title='submit'><img id="done" src="../sysimages/submit_0.jpg" onmouseover="this.src='../sysimages/submit_2.jpg'" onmouseout="this.src='../sysimages/submit_0.jpg'" width="78" height="28" alt="Submit" /></a></div>
+
+<div id="feedback"><p class="fdbkTitle">Feedback</p>
+<div id="fdbkTxt">&nbsp;</div>
+</div>
+
+<!-- InstanceEndEditable -->
+</div><!-- End of qHolder -->
+
+<!-- InstanceBeginEditable name="PromtAndOthers" -->
+<div id="audioAndPgNum">
+	<div id="pgNum">Page 8 of 9</div>
+</div>
+
+<div id="prompt1">Correctly match the items. Then select SUBMIT.</div>
+<!-- InstanceEndEditable -->
+
+
+<div id="navBar">
+  	<a href="#" id="next" title="Next"><span>Next</span></a>
+  	<a href="#" id="back" title="Back"><span>Back</span></a>
+  	<a href="#" id="refresh" name="refresh" title="Refresh"><span>Refresh</span></a>
+    <a href="#" id="help" name="help" title="Help"><span>Help</span></a>
+    <a href="#" id="resources" name="resources" title="Resources"><span>Resources</span></a>
+    <a href="#" id="glossary" name="glossary" title="Glossary"><span>Glossary</span></a>
+    <a href="#" id="menu" name="menu" title="Menu"><span>Menu</span></a>
+</div><!-- End of navBar -->
+
+<a id="exit" href="#" title="Exit"><span>Exit</span></a>
+
+</div><!-- End of contentHolder -->
+
+<!-- InstanceBeginEditable name="BottomCodeArea" -->
+
+<!-- InstanceEndEditable -->
+
+
+</body>
+<!-- InstanceEnd --></html>
